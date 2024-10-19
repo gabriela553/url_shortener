@@ -12,8 +12,9 @@ class ShortenURLView(generics.CreateAPIView):
 
 class RedirectURLView(generics.RetrieveAPIView):
     queryset = ShortenedURL.objects.all()
-    lookup_field = 'short_code'
+    lookup_field = "short_code"
     permission_classes = [AllowAny]
+
     def get(self, request, *args, **kwargs):
         shortened_url = self.get_object()
         return HttpResponseRedirect(shortened_url.original_url)

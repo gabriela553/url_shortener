@@ -7,17 +7,27 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='ShortenedURL',
+            name="ShortenedURL",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('original_url', models.URLField()),
-                ('short_code', models.CharField(default='67CE22AB96', max_length=10, unique=True)),
-                ('created_at', models.DateTimeField(auto_now_add=True)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("original_url", models.URLField()),
+                (
+                    "short_code",
+                    models.CharField(default="67CE22AB96", max_length=10, unique=True),
+                ),
+                ("created_at", models.DateTimeField(auto_now_add=True)),
             ],
         ),
     ]
