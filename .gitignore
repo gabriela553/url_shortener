@@ -1,0 +1,47 @@
+# Python bytecode files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.db
+*.sqlite3
+*.log
+local_settings.py
+db.sqlite3
+/static/
+media/
+
+# VSCode settings
+.vscode/
+
+# macOS system files
+.DS_Store
+
+# PyCharm settings
+.idea/
+
+# Docker files
+Dockerfile
+docker-compose.yml
+
+# Virtualenv
+venv/
+env/
+ENV/
+.venv/
+
+# Test and coverage
+coverage/
+*.cover
+*.log
+nosetests.xml
+coverage.xml
+*.hypothesis/
+
+# Migrations
+*/migrations/*
