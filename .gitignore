@@ -25,10 +25,6 @@ media/
 # PyCharm settings
 .idea/
 
-# Docker files
-Dockerfile
-docker-compose.yml
-
 # Virtualenv
 venv/
 env/
